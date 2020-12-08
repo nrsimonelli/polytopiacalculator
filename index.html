@@ -24,8 +24,7 @@ body
 {
 	font-family: 'Josefin Sans', sans-serif;
 	color: white;
-	background-image: url(other/polytopia.jpg);
-	background-size: cover;
+	background: rgb(0, 0, 0) linear-gradient(rgb(246, 102, 170), rgb(243, 215, 126)) no-repeat fixed 0% 0%;
 }
 h2
 {
@@ -95,27 +94,44 @@ div.q
 #resultcontainer:active #respressindicator
 {
 	visibility: visible;
+	
+}
+#resultcontainer p
+{
+	font-weight: 800;
+	color: rgb(4,3,3);
 }
 .container
 {
 	display: inline-block;
 	position: relative;
-	cursor: pointer;
 	height: 40px;
 	font-size: 17px;
-	border: 1px solid #A9A9A9;
-	padding-top: 10px;
-	padding-bottom: 6px;
-	padding-left: 2px;
-	padding-right: 2px;
+	
 	box-sizing: border-box;
 	-moz-appearance:none;
 	-webkit-appearance: none;
 	appearance:none;
+	
+
+	font-family: 'Josefin Sans', sans-serif;
+	text-transform: capitalize;
+	font-weight: 100;
+	text-shadow: 0 0 10px rgba(0,0,0,.3);
+	background-color: #59C9A5;
+	color: #000;
+	fill: #000;
+	padding: 10px 20px 8px 20px;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,.3);
+	cursor: pointer;
+	border: hidden;
+	
 }
 .container:active
 {
-	background-color: lightgray;
+	background-color: #fff;
+	color: #000;
 }
 .shiphpcontainer
 {
@@ -197,16 +213,23 @@ div.q
 input[type=number]
 {
 	display: inline-block;
-	border: 1px solid #A9A9A9;
-	padding-top: 4px;
-	padding-bottom: 4px;
-	padding-left: 1px;
-	padding-right: 1px;
-	border-radius: 0;
 	font-size: 17px;
 	-moz-appearance:none;
 	-webkit-appearance: none;
 	appearance:none;
+	
+	color: #fff;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 100;
+	text-shadow: 0 0 10px rgba(0,0,0,.3);
+	background-color: rgba(4,3,3,.7);
+	color: #fff;
+	fill: #fff;
+	padding: 10px 20px 8px 20px;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,.3);
+	cursor: pointer;
+	border: hidden;
 }
 select
 {
@@ -215,17 +238,24 @@ select
 	height: 40px;
 	font-size: 17px;
 	display: inline-block;
-	border: 1px solid #A9A9A9;
-	padding-left: 1px;
-	padding-right: 2px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	border-radius: 0;
 	background: url(Other/DownArrow.png) no-repeat right;
 	box-sizing: border-box;
 	-moz-appearance:none;
 	-webkit-appearance: none;
 	appearance:none;
+
+	text-transform: uppercase;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 100;
+	text-shadow: 0 0 10px rgba(0,0,0,.3);
+	background-color: #09f;
+	color: #fff;
+	fill: #fff;
+	padding: 10px 20px 8px 20px;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,.3);
+	cursor: pointer;
+	border: hidden;
 }
 select::-ms-expand
 {
@@ -2847,6 +2877,9 @@ function refreshattackers()
 		<p id="note" class="i"></p>
 		<span id="scrollanchor"></span>
 		<p id="extendedinfo" class="ext" style="display:none"><span style="border-top: 1px dashed black; padding-top: 10px; display: block; max-width: 350px;"></span>Battle history does not contain any entries yet.</p>
+	</div>
+	<div>
+		<img id="footer" src="Other/polyFooter.png" alt="footer image" style="width: 100vw">
 	</div>
 </div>
 
